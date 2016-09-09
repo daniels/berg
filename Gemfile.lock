@@ -1,4 +1,53 @@
 GIT
+  remote: git://github.com/dry-rb/dry-logic.git
+  revision: ce119e1c4171f6ae89dda22a7b05b218373733a6
+  branch: master
+  specs:
+    dry-logic (0.3.0)
+      dry-container (~> 0.2, >= 0.2.6)
+      dry-equalizer (~> 0.2)
+
+GIT
+  remote: git://github.com/dry-rb/dry-struct.git
+  revision: e8306a182c5aa539d90c9ba0503aa05f8673ec1d
+  branch: master
+  specs:
+    dry-struct (0.0.1)
+      dry-configurable (~> 0.1)
+      dry-equalizer (~> 0.2)
+      dry-logic (~> 0.2, >= 0.2.3)
+      dry-types (~> 0.8, >= 0.8.1)
+      ice_nine (~> 0.11)
+
+GIT
+  remote: git://github.com/dry-rb/dry-types.git
+  revision: d4d6df163a735b47a14d0caad5d8edc6d337a79b
+  branch: master
+  specs:
+    dry-types (0.8.1)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1)
+      dry-container (~> 0.3)
+      dry-equalizer (~> 0.2)
+      dry-logic (~> 0.3, >= 0.3.0)
+      dry-monads (>= 0.0.1)
+      ice_nine (~> 0.11)
+      inflecto (~> 0.0.0, >= 0.0.2)
+
+GIT
+  remote: git://github.com/dry-rb/dry-validation.git
+  revision: 0c6d297d20d8261ca7ee9635b250973724c8638e
+  branch: master
+  specs:
+    dry-validation (0.9.5)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+      dry-container (~> 0.2, >= 0.2.8)
+      dry-equalizer (~> 0.2)
+      dry-logic (~> 0.3, >= 0.3.0)
+      dry-types (~> 0.8, >= 0.8.1)
+
+GIT
   remote: https://github.com/ashfurrow/danger-rubocop
   revision: c680826a7eed6f0cf8f4db3c866eb40c08ceea91
   specs:
@@ -89,9 +138,6 @@ GEM
       concurrent-ruby (~> 1.0)
       dry-configurable (~> 0.1, >= 0.1.3)
     dry-equalizer (0.2.0)
-    dry-logic (0.3.0)
-      dry-container (~> 0.2, >= 0.2.6)
-      dry-equalizer (~> 0.2)
     dry-matcher (0.5.0)
     dry-monads (0.0.2)
     dry-system (0.5.0)
@@ -106,22 +152,6 @@ GEM
       dry-matcher (>= 0.5.0)
       dry-monads (>= 0.0.1)
       wisper (>= 1.6.0)
-    dry-types (0.8.1)
-      concurrent-ruby (~> 1.0)
-      dry-configurable (~> 0.1)
-      dry-container (~> 0.3)
-      dry-equalizer (~> 0.2)
-      dry-logic (~> 0.3, >= 0.3.0)
-      dry-monads (>= 0.0.1)
-      ice_nine (~> 0.11)
-      inflecto (~> 0.0.0, >= 0.0.2)
-    dry-validation (0.9.4)
-      concurrent-ruby (~> 1.0)
-      dry-configurable (~> 0.1, >= 0.1.3)
-      dry-container (~> 0.2, >= 0.2.8)
-      dry-equalizer (~> 0.2)
-      dry-logic (~> 0.3, >= 0.3.0)
-      dry-types (~> 0.8, >= 0.8.1)
     dry-web (0.5.0)
       dry-system (~> 0.5)
     dry-web-roda (0.4.0)
@@ -336,11 +366,13 @@ DEPENDENCIES
   danger-rubocop!
   database_cleaner
   dry-equalizer
+  dry-logic!
   dry-matcher
+  dry-struct!
   dry-system
   dry-transaction
-  dry-types (~> 0.8)
-  dry-validation (~> 0.8)
+  dry-types!
+  dry-validation!
   dry-view!
   dry-web
   dry-web-roda
